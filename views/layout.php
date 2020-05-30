@@ -9,6 +9,10 @@
     <!--Here I went ahead and imported two fonts-->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="views/css/style.css" rel="stylesheet" type="text/css"/> 
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -19,8 +23,9 @@
         
     <nav>
         <ul>
-            <li><a href="index.php">Home</a></li>
-          <li><a href='views/pages/aboutus.php'>About us</a></li>
+            <li><a href="pages/home.php">Home</a></li>
+        
+          <li><a href='pages/aboutus.php'>About us</a></li>
 
           <li><a href='?controller=blog&action=readAll'>Blogs</a></li>
           <li><a href='?controller=product&action=update'>Contact us</a></li>
@@ -31,7 +36,7 @@
          <a href="?controller=authentication&action=create" class="header-cases">Signup</a>
 
          
-                 
+       
      
       </nav> 
     
@@ -67,9 +72,7 @@
         Copyright &COPY; <?= date('Y'); ?>
     </footer>
 </div>
- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+ 
   
 
 </body>

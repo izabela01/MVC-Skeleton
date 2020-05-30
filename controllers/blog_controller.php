@@ -59,29 +59,29 @@ class blogController {
     public function update() {
         
       if($_SERVER['REQUEST_METHOD'] == 'GET'){
-          if (!isset($_GET['blogID']))
+          if (!isset($_GET['id']))
         return call('pages', 'error');
 
         // we use the given id to get the correct product
-        $blog = Blog::find($_GET['blogID']);
+        $blog = Blog::find($_GET['id']);
       
         require_once('views/blog/update.php');
         }
       else
           { 
-            $blogID = $_GET['blogID'];
+            $blogID = $_GET['id'];
             Blog::update($blogID);
                         
-            $blog = blog::all();
+            $blog = Blog::all();
             require_once('views/blog/readAll.php');
       }
       
     }
     public function delete() {
-            Product::remove($_GET['id']);
+            blog::remove($_GET['id']);
             
-            $products = Product::all();
-            require_once('views/products/readAll.php');
+            $blog = blog::all();
+            require_once('views/blog/readAll.php');
       }
       
     }

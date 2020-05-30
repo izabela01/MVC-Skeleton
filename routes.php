@@ -33,8 +33,8 @@ function call($controller, $action) {
 // Add an entry for each new controller and its actions
 
 $controllers = array('pages' => ['home', 'aboutus', 'error'],
-    'product' => ['readAll', 'read', 'create', 'update', 'delete'],
-    'blog' => ['readAll', 'read', 'create', 'update'],
+   
+    'blog' => ['readAll', 'read', 'create', 'update', 'delete'],
     'authentication' => ['create', 'login'],
     'controllerXXX' => ['actionYYY', 'actionZZZ'],
 );

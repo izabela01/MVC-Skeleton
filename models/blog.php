@@ -56,7 +56,7 @@ if($blog){
     
     //changed until this point
     //change the below, still victorias code.
-
+    //add product when you run blog and you see ad product its this 
 public static function update($blogID) {
     $db = Db::getInstance();
     $req = $db->prepare("Update blog set title=:title, body=:body where blogID=:blogID");
@@ -73,6 +73,7 @@ public static function update($blogID) {
     }
 $title = $filteredTitle;
 $body = $filteredBody;
+
 $req->execute();
 
 //upload product image if it exists
@@ -201,15 +202,15 @@ public static function uploadFile(string $title) {
 		unlink($tempFile); 
 	}
 }
-public static function remove($id) {
+public static function remove($blogID) {
       $db = Db::getInstance();
       //make sure $id is an integer
-      $id = intval($id);
-      $req = $db->prepare('delete FROM product WHERE id = :id');
+      $blogID = intval($blogID);
+      $req = $db->prepare('delete FROM blog WHERE blogID = :blogID');
       // the query was prepared, now replace :id with the actual $id value
-      $req->execute(array('id' => $id));
+      $req->execute(array('blogID' => $blogID));
   }
 
   
-    }
+    
   }
