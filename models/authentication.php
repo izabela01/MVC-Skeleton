@@ -47,11 +47,13 @@ $errors["password"] = "Password Required";
 die();
 }
 
-$passwordhash = password_hash($password, PASSWORD_DEFAULT);
+//$passwordhash = password_hash($password, PASSWORD_DEFAULT);
 
 $sql = $db->prepare("INSERT INTO admin_login (email, password) VALUES (:email,  :password)");
 $sql->bindParam(':email', $email);
-$sql->bindParam(':password', $passwordhash);
+//$sql->bindParam(':password', $passwordhash);
+
+
 
 
 if (isset($_POST['email']) && $_POST['email'] != "") {
@@ -81,30 +83,30 @@ $password = trim($_POST['password']);
 if($email != "" && $password != "") {
     
 
-
 try {
-$query = $db->prepare("SELECT adminID, email, password FROM admin_login WHERE email = :email");
+$query = $db->prepare("SELECT adminID, email, hashpassword FROM admin_login WHERE email = :email");
 $query->bindParam(':email', $email);
 $query->execute();
 //$count = $query->rowCount();
 $row = $query->fetch(PDO::FETCH_ASSOC);
 
 
-//if($count == 1 &&!empty($row)) {
+if($count == 1 &&!empty($row)) {
 if($row ===FALSE){
    die('Incorrect email / password combination!');
     } else {
- $validpassword = (password_verify($password, $row['password']));
+ $validpassword = (password_verify($password, $row['hashpassword']));
 
 if ($validpassword) {
 $_SESSION['email'] = $_POST['email'];
-header("location:index.php");
+header("?controller=blog&action=create");
 
-
+//
  } else {
         echo "Invalid email and password!";
       }
 } }
+}
 catch (PDOException $e) {
       echo "Error : ".$e->getMessage();
    
