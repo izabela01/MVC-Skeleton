@@ -14,7 +14,7 @@
     </head>
     <body>
 
-        <main>
+        
             <br>
             <br>
             <br>
@@ -117,8 +117,7 @@
             <!--First wrapper END-->
 
             <!--The main content END-->
-        </main>
-
+       
         <!--Second wrapper START-->
         <!-- <div class="wrapper">
         <!--The footer START-->

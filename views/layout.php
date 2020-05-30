@@ -62,8 +62,7 @@
             </div>
         </nav>       
 
-     
-      
+    
     
     
     </header>
@@ -71,7 +70,12 @@
     <?php require_once('routes.php'); ?>
 </div>
     
-         
+            <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; Your Website</small>
+    </div>
+  </footer>
+      
 
   <!--<footer class="py-5 bg-dark">
             <div class="container">
