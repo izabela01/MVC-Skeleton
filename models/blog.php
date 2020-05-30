@@ -10,6 +10,7 @@
     public $title;
     public $body;
     public $blogDate;
+    public $description;
     
 
     public function __construct($blogID, $adminID, $categoriesID, $countryID, $title, $body, $blogDate, $description) { //pass all in
