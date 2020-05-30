@@ -3,7 +3,7 @@
 <p>Here is a list of all products:</p>
 
 <p>
-<?php var_dump($thing);?>
+<?php var_dump($blog);?>
 </p>
 
 <?php foreach($products as $product) { ?> //this page when you do blog post table this needs to be updated 

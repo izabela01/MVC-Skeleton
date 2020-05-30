@@ -98,7 +98,7 @@ function call($controller, $action) {
     if(in_array($action, $available )){
         $array = str_split($action, 6);
         $ID = intval($array[1]);
-        $controller-> {$array[0]}($ID);
+        $controller-> {$array[0]}();
 //           $controller-> { $array[0] }();
     }
     else {
