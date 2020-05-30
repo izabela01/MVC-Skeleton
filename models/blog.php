@@ -33,6 +33,33 @@
       }
       return $list; //come back to make it only show body and title and blog date.
     }
+    
+        public static function allCountryID() {
+      $list = [];
+      // this part under is just instansiating the connector to make the connection between the database-DB class in connection.php
+      $db = Db::getInstance();
+      $req = $db->prepare('SELECT * FROM blog WHERE countryID = :ID '); //change
+      // we create a list of Product objects from the database results
+      
+     $req->bindParam(':ID', $ID);
+    $req->execute();
+    $blog = $req->fetch(PDO:: FETCH_OBJ);
+      
+      if($blog ){
+    return new Blog($blog['blogID'], $blog['adminID'], $blog['categoriesID'], $blog['countryID'], $blog['title'], $blog['body'], $blog['blogDate']);
+    }
+      
+      
+//      foreach($req->fetchAll() as $blog) { //change to blog
+//        $list[] = new Blog($blog['blogID'], $blog['adminID'], $blog['categoriesID'], $blog['countryID'], $blog['title'], $blog['body'], $blog['blogDate']);
+//      }
+//      return $list; //come back to make it only show body and title and blog date.
+    }
+    
+    
+    
+    
+    
 
         public static function find($blogID) {
       $db = Db::getInstance();
@@ -212,4 +239,6 @@ public static function remove($id) {
 
   
     }
-  }
+  
+  
+  

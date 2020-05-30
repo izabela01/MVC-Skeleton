@@ -10,6 +10,14 @@ class blogController {
       $blog = blog::all();
       require_once('views/blog/readAll.php');
     }
+    
+    
+     public function readID() {
+      // we store all the posts in a variable
+      $blog = blog::allCountryID();
+      require_once('views/products/readID.php');
+    }
+    
 
     
     

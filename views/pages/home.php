@@ -61,10 +61,11 @@
               <h3>Poland</h3>
             </div>
           </a>
-            <a href="#">
+            <a href="?controller=blog&action=readID4">
             <div class="index-boxlink-square">
               <h3>Vietnam</h3>
             </div>
+            </a>
           
         <!--The links/boxes bellow the banner END-->
         </section>
