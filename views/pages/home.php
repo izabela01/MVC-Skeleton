@@ -14,14 +14,6 @@
     </head>
     <body>
 
-        
-            <br>
-            <br>
-            <br>
-            <br>
-
-
-            <!--The website banner START-->
             <section class="index-banner">
                 <div class="vertical-center">
 
