@@ -1,50 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-
-        <meta charset="utf-8">
-        <title>Our Blog</title>
-        <!--We need the meta tag to properly scale the responsive CSS code-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Here I went ahead and imported two fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-        <!--<link href="views/css/style.css" rel="stylesheet" type="text/css"/> -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"  crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-
-            <section class="index-banner">
-                <div class="vertical-center">
-
-
-                    <h2>Welcome to our Travel Blog<br>Explore the world with us</h2>
-                    <h1>Our blog is not just about photography, it will take you on a journey of culture, food, history and beyond</h1>
-                    <div class="container">
-                        <br>
-                        <br>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-search" type="button"><i class="fa fa-search fa-fw"></i> Search</button>
-                            </span>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--The website banner END-->
-            </section>
-
-
-            <br>
-            <br>
-            <br>
-
-
-           
+  <body>
+      <!--BBUSHRAS LINKS
+      
+      <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="views/css/style.css" rel="stylesheet" type="text/css"/>
+   --->
+     
+      <!--The website banner START-->
+      <section class="index-banner">
+        <div class="vertical-center">
+          <h2>Welcome to our Travel Blog<br>Explore the world with us</h2>
+          <h1>Our blog is not just about photography, it will take you on a journey of culture, food, history and beyond</h1>
+</div>
+  
+      <!--The website banner END-->
+      </section>
+    
+        <hr>
+        
+           <div class="container">
+ 
             <div class="card-deck">
 
                 <div class="card">
@@ -93,53 +69,15 @@
 
                     </div>
                 </div>
-            </div>
+            </div>  
+                    </div>
+          
+            
+         <hr>
+      <!--First wrapper START-->
+     
+    
 
-
-            <br>
-            <br>
-            <br>
-
-            <br>
-            <br>
-
-
-            <!--The links/boxes bellow the banner END-->
-
-            <!--First wrapper END-->
-
-            <!--The main content END-->
-       
-        <!--Second wrapper START-->
-        <!-- <div class="wrapper">
-        <!--The footer START-->
-        <!-- <footer>
-        <!--The main footer menu-->
-        <!-- <ul class="footer-links-main">
-           <li><a href="#">Home</a></li>
-           <li><a href="#">About us</a></li>
-           <li><a href="#">Contact us</a></li>
-           <li><a href="#">Subscribe and Login</a></li>
-         </ul>
-        <!--The latest cases footer menu-->
-
-        <!--The social media footer menu-->
-        <!--<div class="footer-sm">
-          <a href="#">
-            <img src="views/images/img/youtube-symbol.png" alt="youtube icon">
-          </a>
-          <a href="#">
-            <img src="views/images/img/twitter-logo-button.png" alt="youtube icon">
-          </a>
-          <a href="#">
-            <img src="views/images/img/facebook-logo-button.png" alt="youtube icon">
-          </a>
-        </div>
-        <!--The footer END-->
-        <!--</footer>-->
-        <!--Second wrapper END--> 
-        <!--</div> -->
-
-
-    </body>
+    
+  </body>
 </html>

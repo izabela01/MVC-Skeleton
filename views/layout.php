@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html>
    <head>
-    
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" >
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      
     <title>Our Blog</title>
-    
-       <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"  crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!--External bootstrap Stylesheet -->
-<link href="views/css/styles1.css" rel="stylesheet" type="text/css"/> 
-
-    <!--We need the meta tag to properly scale the responsive CSS code
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <!--Here I went ahead and imported two fonts
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">-->
-    <!--<link href="views/css/style.css" rel="stylesheet" type="text/css"/> -->
-    
   </head>
   <body>
     <header>
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+            OUR TRAVEL BLOG
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
 
- 
-           <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">Our Travel Blog</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
@@ -40,7 +33,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="?controller=pages&action=aboutuss">About Us</a>
+                            <a class="nav-link" href="?controller=pages&action=aboutus">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href='?controller=blog&action=readAll'>Blogs</a>
@@ -64,26 +57,28 @@
 
     
     
-    
     </header>
 <div class="w3-container w3-pink">
-    <?php require_once('routes.php'); ?>
+   <!--<?php include('routes.php'); ?>
 </div>
+      
     
-            <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
     <div class="container text-center">
       <small>Copyright &copy; Your Website</small>
     </div>
   </footer>
-      
-
-  <!--<footer class="py-5 bg-dark">
-            <div class="container">
-                <p class="m-0 text-center text-white"> Our Travel Blog  &copy <?= date('Y');?></p>
-            </div></footer> -->
     
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"  crossorigin="anonymous"></script>
-  </body>
+</body>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+ 
+
+</body>
 </html>
+
+
+ 
