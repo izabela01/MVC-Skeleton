@@ -35,6 +35,7 @@ function call($controller, $action) {
 $controllers = array('pages' => ['home', 'aboutus', 'error'],
    
     'blog' => ['readAll', 'read', 'create', 'update', 'delete'],
+    'subscribe' => ['readAll', 'read', 'create', 'update', 'delete'],
     'authentication' => ['create', 'login'],
     'controllerXXX' => ['actionYYY', 'actionZZZ'],
 );

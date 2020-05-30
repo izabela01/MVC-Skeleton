@@ -34,6 +34,7 @@
 
         <a href="?controller=authentication&action=login" class="header-cases">Login</a>
          <a href="?controller=authentication&action=create" class="header-cases">Signup</a>
+         <a href="?controller=subscribe&action=create" class="header-cases">Subscribe</a>   
 
          
        

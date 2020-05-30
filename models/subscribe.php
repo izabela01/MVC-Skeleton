@@ -1,6 +1,6 @@
 
 <?php
-  class blog { 
+  class Subscribe { 
 
     // we define 3 attributes
     public $blogID;

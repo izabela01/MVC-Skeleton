@@ -4,7 +4,7 @@
 
 //change everything that is product to your controller BLOG
 
-class blogController {
+class subscribeController {
     public function readAll() {
       // we store all the posts in a variable
       $blog = blog::all();

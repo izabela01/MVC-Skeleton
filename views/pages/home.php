@@ -18,14 +18,7 @@
         <div class="vertical-center">
           <h2>Welcome to our Travel Blog<br>Explore the world with us</h2>
           <h1>Our blog is not just about photography, it will take you on a journey of culture, food, history and beyond</h1>
-           <div class="container">
-<div class="input-group">
-	<input type="text" class="form-control" placeholder="Search for...">
-      <span class="input-group-btn">
-        <button class="btn btn-search" type="button"><i class="fa fa-search fa-fw"></i> Search</button>
-      </span>
-</div>
-</div>
+       
         </div>
                  
          
