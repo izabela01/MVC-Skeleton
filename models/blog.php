@@ -12,7 +12,7 @@
     public $blogDate;
     
 
-    public function __construct($blogID, $adminID, $categoriesID, $countryID, $title, $body, $blogDate) { //pass all in
+    public function __construct($blogID, $adminID, $categoriesID, $countryID, $title, $body, $blogDate, $description) { //pass all in
       $this->blogID    = $blogID; //pass all in
       $this->adminID  = $adminID;
       $this->categoriesID = $categoriesID;
@@ -20,6 +20,7 @@
         $this->title = $title;
          $this->body = $body;
          $this->blogDate = $blogDate;
+         $this->description = $description;
     }
 
     public static function all() {
@@ -29,7 +30,7 @@
       $req = $db->query('SELECT * FROM blog'); //change
       // we create a list of Product objects from the database results
       foreach($req->fetchAll() as $blog) { //change to blog
-        $list[] = new Blog($blog['blogID'], $blog['adminID'], $blog['categoriesID'], $blog['countryID'], $blog['title'], $blog['body'], $blog['blogDate']);
+        $list[] = new Blog($blog['blogID'], $blog['adminID'], $blog['categoriesID'], $blog['countryID'], $blog['title'], $blog['body'], $blog['blogDate'], $blog["description"]); 
       }
       return $list; //come back to make it only show body and title and blog date.
     }
@@ -212,4 +213,4 @@ public static function remove($id) {
 
   
     }
-  }
+  
