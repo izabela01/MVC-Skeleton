@@ -15,7 +15,7 @@
   <body>
     <header>
     <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light static mb-5 shadow">
   <div class="container">
     <a class="navbar-brand" href="#">
             OUR TRAVEL BLOG
@@ -58,9 +58,13 @@
     
     
     </header>
+ 
 <div class="w3-container w3-pink">
-   <!--<?php include('routes.php'); ?>
+    
+   <?php include('routes.php'); ?>
+   
 </div>
+     
       
     
   <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
@@ -69,13 +73,15 @@
     </div>
   </footer>
     
-</body>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     
- 
+  <body>
+<!-- Page Content -->
+
 
 </body>
 </html>

@@ -11,8 +11,9 @@ class blog {
     public $title;
     public $body;
     public $blogDate;
+    public $description;
 
-    public function __construct($blogID, $adminID, $categoriesID, $countryID, $title, $body, $blogDate) { //pass all in
+    public function __construct($blogID, $adminID, $categoriesID, $countryID, $title, $body, $blogDate, $description) { //pass all in
         $this->blogID = $blogID; //pass all in
         $this->adminID = $adminID;
         $this->categoriesID = $categoriesID;
@@ -20,6 +21,7 @@ class blog {
         $this->title = $title;
         $this->body = $body;
         $this->blogDate = $blogDate;
+        $this->description = $description;
     }
 
     public static function all() {
@@ -29,8 +31,8 @@ class blog {
         $req = $db->query('SELECT * FROM blog'); //change
         // we create a list of Product objects from the database results
         foreach ($req->fetchAll() as $blog) { //change to blog
-            $list[] = new Blog($blog['blogID'], $blog['adminID'], $blog['categoriesID'], $blog['countryID'], $blog['title'], $blog['body'], $blog['blogDate']);
-        }
+               $list[] = new Blog($blog['blogID'], $blog['adminID'], $blog['categoriesID'], $blog['countryID'], $blog['title'], $blog['body'], $blog['blogDate'], $blog["description"]);
+      }
         return $list; //come back to make it only show body and title and blog date.
     }
 
@@ -43,7 +45,7 @@ class blog {
         $req->execute(array('blogID' => $blogID));
         $blog = $req->fetch();
         if ($blog) {
-            return new Blog($blog['blogID'], $blog['adminID'], $blog['categoriesID'], $blog['countryID'], $blog['title'], $blog['body'], $blog['blogDate']);
+            return new Blog($blog['blogID'], $blog['adminID'], $blog['categoriesID'], $blog['countryID'], $blog['title'], $blog['body'], $blog['blogDate'], $blog["description"]);
         } else {
             //replace with a more meaningful exception
             throw new Exception('Could not find blog');

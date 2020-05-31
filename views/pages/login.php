@@ -16,7 +16,7 @@ and open the template in the editor.
         <style>
           
 body{
-  height: 100%;
+  height: 70%;
   background-image:url("views/images/img/beach1.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -25,13 +25,13 @@ body{
                 
         </style>
     </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 offset md-4 form-div login">
+ 
+              <div class="container">
+  <div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+      <h1 class="font-weight-light">Login</h1>
+            <div class="card-body">
                     <form action="" method="POST">
-                        <h3 class="text-center">Login</h3>
-
 
                             <div class="form-group">
                             <label for="=email">Email</label>
@@ -51,20 +51,19 @@ body{
 
 
                     </form>
-
+            </div>
 
                 </div>   
 
 
             </div>
+                  </div>
+        
 
-
-
-        </div>
 
         <?php
         // put your code here
         ?>
-    </body>
+  
 </html>
 

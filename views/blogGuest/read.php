@@ -40,7 +40,7 @@
         <hr>
 
         <!-- Date/Time -->
-        <p>Posted on <?php echo $blog->blogDate . "<br>";?></p>
+        <p>Posted on <?php echo $rblog->blogDate . "<br>";?></p>
 
         <hr>
 
@@ -57,20 +57,15 @@
                   
 
       </div>
+<!--side bar widget stuff-->
+       <div class="col-md-4">
 
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
-
-        <!-- Search Widget -->
+        <!-- Extra Functionality Widget -->
         <div class="card my-4">
-          <h5 class="card-header">Search</h5>
           <div class="card-body">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">Go!</button>
-              </span>
-                <a href='?controller=blog&action=update&id=<?php echo $blog->blogID; ?>'class="btn btn-primary">Update this Blog Post&rarr;</a>
+               <a href='?controller=blog&action=subscribe'class="btn btn-primary">Subscribet&rarr;</a>
+             
             </div>
           </div>
         </div>
@@ -83,26 +78,26 @@
               <div class="col-lg-6">
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <a href="#">Web Design</a>
+                    <a href="#">Tips</a>
                   </li>
                   <li>
-                    <a href="#">HTML</a>
+                    <a href="#">Resteraunt</a>
                   </li>
                   <li>
-                    <a href="#">Freebies</a>
+                    <a href="#">Trips</a>
                   </li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <a href="#">JavaScript</a>
+                    <a href="#">Money</a>
                   </li>
                   <li>
-                    <a href="#">CSS</a>
+                    <a href="#">Kids</a>
                   </li>
                   <li>
-                    <a href="#">Tutorials</a>
+                    <a href="#">Not sure</a>
                   </li>
                 </ul>
               </div>

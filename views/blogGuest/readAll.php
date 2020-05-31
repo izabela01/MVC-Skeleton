@@ -1,4 +1,4 @@
-
+<p>Here is a list of all blogs:</p>
  
 <!-- Bootstrap core CSS -->
   <link href="css_All/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,14 +49,14 @@
 
       </div>
 
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
+     <!--side bar widget stuff-->
+       <div class="col-md-4">
 
         <!-- Extra Functionality Widget -->
         <div class="card my-4">
           <div class="card-body">
             <div class="input-group">
-               <a href='?controller=blog&action=create'class="btn btn-primary">Make a Blog Post&rarr;</a>
+               <a href='?controller=blog&action=subscribe'class="btn btn-primary">Subscribe&rarr;</a>
              
             </div>
           </div>
@@ -96,6 +96,7 @@
             </div>
           </div>
         </div>
+
 
         <!-- Side Widget -->
         <div class="card my-4">

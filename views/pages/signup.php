@@ -22,12 +22,14 @@ body{
     </head>
     <body>
         
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 offset md-4 form-div login">
+           <div class="container">
+  <div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+      <h1 class="font-weight-light">Sign Up </h1>
+      
+          <div class="card-body">
+         
                     <form action="" method="POST">
-                        <h3 class="text-center">Register</h3>
-                       
                        
                         <div class="form-group">
                             <label for="=email">Email</label>
@@ -58,7 +60,7 @@ body{
 
 
             </div>
-
+  </div>
 
 
         </div>
